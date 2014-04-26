@@ -57,12 +57,15 @@ if(len(sys.argv)==2):
     print 'storing credentials' + str(credentials)
     storage.put(credentials)
     #------------------------------------------------------
-
-	##USE THIS AFTER YOU GET THE STRING
+    
+    #****IMPORTANT*****************************************************<<<<<<<<<<<<<
+    ##USE THIS AFTER YOU GET THE STRING
     ##PREVIOUSLY STORED CREDENTIALS
     #storage = Storage('a_credentials_file')
     #print 'getting credentials from file'
     #credentials = storage.get()
+    
+    
 	
     # Create an httplib2.Http object and authorize it with our credentials
     http = httplib2.Http()
