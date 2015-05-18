@@ -55,6 +55,7 @@ if(len(sys.argv)==2):
     code = raw_input('Enter verification code: ').strip()
     credentials = flow.step2_exchange(code)
     print 'storing credentials' + str(credentials)
+    storage = Storage('a_credentials_file')
     storage.put(credentials)
     #------------------------------------------------------
     
